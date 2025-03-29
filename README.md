@@ -14,7 +14,7 @@
 
 ### W5 : soal 3
 
-<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal3.gif"  width="300px">
+<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal3.gif"  width="150px">
 
 # Soal 4
 
@@ -24,7 +24,7 @@ Maksud dari langkah 1 dan langkah 2 itu menjalankan tiga fungsi yang masing-masi
 
 ### W5 : soal 4
 
-<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal4.gif"  width="300px">
+<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal4.gif"  width="150px">
 
 # Soal 5
 
@@ -34,4 +34,4 @@ Maksud dari langkah 2 itu pakai Completer<int> buat ngontrol kapan sebuah Future
 
 ### W5 : soal 5
 
-<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal5.gif"  width="300px">
+<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal5.gif"  width="150px">
