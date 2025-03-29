@@ -1,21 +1,33 @@
 # Soal 2
+
 ### W5 : soal 2
+
 <img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/soal2.1.jpg"  width="900px">
 <img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/soal2.2.jpg"  width="900px">
 
 # Soal 3
 
 ## Penjalasan
-- .substring. Ini bertujuan agar karakter pertama dari data yang ditampilkan di variabel result. Tapi panjang value.body kurang dari data karakter yang pertama, pemanggilan substring dapat menyebabkan error. 
-- catchError(_), yang akan menangkap kesalahan seperti koneksi gagal atau respons server bermasalah. Jika terjadi error
+
+- .substring. Ini bertujuan agar karakter pertama dari data yang ditampilkan di variabel result. Tapi panjang value.body kurang dari data karakter yang pertama, pemanggilan substring dapat menyebabkan error.
+- catchError(\_), yang akan menangkap kesalahan seperti koneksi gagal atau respons server bermasalah. Jika terjadi error
 
 ### W5 : soal 3
+
 <img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal3.gif"  width="300px">
 
 # Soal 4
 
 ## Penjelasan
+
 Maksud dari langkah 1 dan langkah 2 itu menjalankan tiga fungsi yang masing-masing butuh 3 detik buat ngembaliin angka (1, 2, dan 3). Di dalam fungsi count(), ketiga fungsi ini dipanggil satu per satu pakai await, jadi total waktu yang dibutuhkan 9 detik. Angka yang didapat dijumlahin ke variabel total, terus diubah jadi String dan disimpan di result. Setelah itu, setState() dipanggil supaya UI ikut berubah dan nunjukin hasilnya.
 
 ### W5 : soal 4
+
 <img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal4.gif"  width="300px">
+
+# Soal 5
+
+## Penjelasan
+
+Maksud dari langkah 2 itu pakai Completer<int> buat ngontrol kapan sebuah Future selesai. Pas getNumber() dipanggil, dia bikin Completer, lalu manggil calculate(), dan langsung ngembaliin Future, tapi hasilnya belum ada. Nah, di dalam calculate(), ada delay 5 detik pakai Future.delayed(), baru setelah itu completer.complete(42); dipanggil buat ngasih nilai 42 ke Future tadi. Jadi, siapa pun yang nunggu hasil dari getNumber() harus sabar dulu 5 detik, baru dapat angka 42.
