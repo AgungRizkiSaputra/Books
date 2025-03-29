@@ -11,3 +11,11 @@
 
 ### W5 : soal 3
 <img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal3.gif"  width="300px">
+
+# Soal 4
+
+## Penjelasan
+Maksud dari langkah 1 dan langkah 2 itu menjalankan tiga fungsi yang masing-masing butuh 3 detik buat ngembaliin angka (1, 2, dan 3). Di dalam fungsi count(), ketiga fungsi ini dipanggil satu per satu pakai await, jadi total waktu yang dibutuhkan 9 detik. Angka yang didapat dijumlahin ke variabel total, terus diubah jadi String dan disimpan di result. Setelah itu, setState() dipanggil supaya UI ikut berubah dan nunjukin hasilnya.
+
+### W5 : soal 4
+<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal4.gif"  width="300px">
