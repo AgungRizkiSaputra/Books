@@ -30,7 +30,7 @@ Maksud dari langkah 1 dan langkah 2 itu menjalankan tiga fungsi yang masing-masi
 
 ## Penjelasan
 
-Maksud dari langkah 2 itu pakai Completer<int> buat ngontrol kapan sebuah Future selesai. Pas getNumber() dipanggil, dia bikin Completer, lalu manggil calculate(), dan langsung ngembaliin Future, tapi hasilnya belum ada. Nah, di dalam calculate(), ada delay 5 detik pakai Future.delayed(), baru setelah itu completer.complete(42); dipanggil buat ngasih nilai 42 ke Future tadi. Jadi, siapa pun yang nunggu hasil dari getNumber() harus sabar dulu 5 detik, baru dapat angka 42.
+Maksud dari langkah 2 itu pakai Completer<int> buat ngontrol kapan sebuah Future selesai. Pas getNumber() dipanggil, dia bikin Completer, lalu manggil calculate(), dan langsung ngembaliin Future, tapi hasilnya belum ada. Nah, di dalam calculate(), ada delay 5 detik pakai Future.delayed(), baru setelah itu completer.complete(42); dipanggil buat ngasih nilai 42 ke Future tadi. Jadi, harus nunggu dulu hasil dari getNumber() selama 5 detik, baru dapat angka 42.
 
 ### W5 : soal 5
 
