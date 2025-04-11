@@ -35,3 +35,13 @@ Maksud dari langkah 2 itu pakai Completer<int> buat ngontrol kapan sebuah Future
 ### W5 : soal 5
 
 <img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal5.gif"  width="150px">
+
+# Soal 6
+
+## Penjelasan
+
+Perbedaan di Langkah 2 dan Langkah 5–6 ada di cara nanganin errornya. Di Langkah 2, kalau ada masalah saat proses calculate(), aplikasinya bisa error atau ngegantung karena nggak ada penanganan error sama sekali. Sementara di Langkah 5, ada try-catch yang siap menanganin error tersebut dan kasih respon yang sesuai. Terus di Langkah 6, hasilnya ditangani pakai then() kalau sukses, dan catchError() kalau gagal. 
+
+### W5 : soal 6
+
+<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal6.gif"  width="150px">
