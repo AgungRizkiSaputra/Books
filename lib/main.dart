@@ -61,12 +61,26 @@ class _FuturePageState extends State<FuturePage> {
                 // PRAKTIKUM 2
                 // count();
 
-                // PRAKTIKUM 3
-                getNumber().then((value) {
-                  setState(() {
-                    result = value.toString();
-                  });
-                });
+                // PRAKTIKUM 3 soal 5
+                // getNumber().then((value) {
+                //   setState(() {
+                //     result = value.toString();
+                //   });
+                // });
+
+                // soal 6
+                getNumber()
+                    .then((value) {
+                      setState(() {
+                        result = value.toString();
+                      });
+                    })
+                    .catchError((e) {
+                      result = 'An error occurred';
+                    });
+
+                // PRAKTIKUM 4
+                // returnFG();
               },
             ),
             const Spacer(),
@@ -120,8 +134,29 @@ class _FuturePageState extends State<FuturePage> {
     return completer.future;
   }
 
-  Future calculate() async {
-    await Future.delayed(const Duration(seconds: 5));
-    completer.complete(42);
+  calculate() async {
+    try {
+      await Future.delayed(const Duration(seconds: 5));
+      completer.complete(42);
+    } catch (_) {
+      completer.completeError('An error occurred during calculation');
+    }
   }
+
+  // void returnFG() {
+  //   FutureGroup<int> futureGroup = FutureGroup<int>();
+  //   futureGroup.add(returnOneAsync());
+  //   futureGroup.add(returnTwoAsync());
+  //   futureGroup.add(returnThreeAsync());
+  //   futureGroup.close();
+  //   futureGroup.future.then((List<int> value) {
+  //     int total = 0;
+  //     for (var element in value) {
+  //       total += element;
+  //     }
+  //     setState(() {
+  //       result = total.toString();
+  //     });
+  //   });
+  // }
 }
