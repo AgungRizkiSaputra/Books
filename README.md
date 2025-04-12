@@ -69,3 +69,13 @@ Perbedaan langkah 1 dan langkah 4 adalah cara ngatur proses async (future). Lang
 ## Penjelasan
 
 Hasilnya itu muncul tulisan "Success". Langkah 1 itu bikin fungsi yang sengaja lempar error setelah nunggu 2 detik, itu kayak buat siimulasi error. Nah, di langkah 4, fungsi itu dipanggil tapi dibungkus pakai try-catch biar errornya bisa diambil dan ditampilin ke UInya pakai setState. Terus, bagian finally tetap jalan buat nunjukin prosesnya udah selesai, entah berhasil atau gagal. Jadi intinya, langkah 1 bikin error, langkah 4 nangkep dan ngatur responnya.
+
+# Soal 12
+
+## Penjelasan
+
+Ya, Saya dapat koordinat GPS saat di run browser itu karna ada await Geolocator.requestPermission(); dimana harus dapat izin dengan benar agar bisa run di browser.
+
+### W5 : soal 12
+
+<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal12.gif"  width="150px">
