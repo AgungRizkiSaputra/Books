@@ -57,3 +57,9 @@ Perbedaan di Langkah 2 dan Langkah 5–6 ada di cara nanganin errornya. Di Langk
 ## Penjelasan
 
 Perbedaan langkah 1 dan langkah 4 adalah cara ngatur proses async (future). Langkah 1 pakai FutureGroup, cocok kalau future-nya ditambah satu-satu secara dinamis, tapi butuh package tambahan dan kodenya agak panjang. Sedangkan langkah 4 pakai Future.wait, simpel banget karena semua future udah siap dari awal, nggak perlu package tambahan, dan langsung jalan barengan. Jadi, kalau future-nya udah lengkap dari awal, mending pakai Future.wait; tapi kalau future-nya muncul belakangan atau dinamis, baru deh pakai FutureGroup.
+
+# Soal 9
+
+### W5 : soal 9
+
+<img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal9.gif"  width="150px">
