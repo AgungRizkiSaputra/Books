@@ -63,3 +63,9 @@ Perbedaan langkah 1 dan langkah 4 adalah cara ngatur proses async (future). Lang
 ### W5 : soal 9
 
 <img src="https://github.com/AgungRizkiSaputra/Books/blob/main/images/GIFsoal9.gif"  width="150px">
+
+# Soal 10
+
+## Penjelasan
+
+Hasilnya itu muncul tulisan "Success". Langkah 1 itu bikin fungsi yang sengaja lempar error setelah nunggu 2 detik, itu kayak buat siimulasi error. Nah, di langkah 4, fungsi itu dipanggil tapi dibungkus pakai try-catch biar errornya bisa diambil dan ditampilin ke UInya pakai setState. Terus, bagian finally tetap jalan buat nunjukin prosesnya udah selesai, entah berhasil atau gagal. Jadi intinya, langkah 1 bikin error, langkah 4 nangkep dan ngatur responnya.
